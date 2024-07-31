@@ -1,0 +1,7 @@
+selenium
+openpyxl
+numpy
+six
+python-dateutil==2.8.2
+pandas
+pathlib
