@@ -33,21 +33,35 @@
     "default_sample_sharpness": 2.0,
     "default_sampler": "dpmpp_2m_sde_gpu",
     "default_scheduler": "karras",
-    "default_performance": "Extreme Speed",
+    "default_performance": "Quality",
     "default_prompt": "",
     "default_prompt_negative": "",
-    "default_styles": [
-        "Fooocus V2",
-        "Fooocus Enhance",
-        "Fooocus Sharp"
-    ],
+    "default_styles": [],
     "default_aspect_ratio": "1152*896",
     "default_overwrite_step": -1,
     "checkpoint_downloads": {
-        "juggernautXL_v8Rundiffusion.safetensors": "https://huggingface.co/lllyasviel/fav_models/resolve/main/fav/juggernautXL_v8Rundiffusion.safetensors"
+        "juggernautXL_v8Rundiffusion.safetensors": "https://huggingface.co/lllyasviel/fav_models/resolve/main/fav/juggernautXL_v8Rundiffusion.safetensors",
+        "realisticStockPhoto_v20.safetensors": "https://huggingface.co/lllyasviel/fav_models/resolve/main/fav/realisticStockPhoto_v20.safetensors",
+        "Animagine_XL_V3_1.safetensors": "https://huggingface.co/cagliostrolab/animagine-xl-3.1/resolve/main/animagine-xl-3.1.safetensors",
+        "richyrichmix_V2Fp16.safetensors": "https://civitai.com/api/download/models/113391?type=Model&format=SafeTensor&size=pruned&fp=fp16",
+        "realisticVisionV60B1_v51VAE.safetensors": "https://civitai.com/api/download/models/130072?type=Model&format=SafeTensor&size=full&fp=fp16",
+        "dreamshaper_8.safetensors": "https://civitai.com/api/download/models/128713?type=Model&format=SafeTensor&size=pruned&fp=fp16",
+        "sd_xl_base_1.0_0.9vae.safetensors": "https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0/resolve/main/sd_xl_base_1.0_0.9vae.safetensors",
+        "sd_xl_refiner_1.0_0.9vae.safetensors": "https://huggingface.co/stabilityai/stable-diffusion-xl-refiner-1.0/resolve/main/sd_xl_refiner_1.0_0.9vae.safetensors",
+        "darksun_v7b.safetensors": "https://civitai.com/api/download/models/237459?type=Model&format=SafeTensor&size=full&fp=fp32"
     },
     "embeddings_downloads": {},
-    "lora_downloads": {},
+    "lora_downloads": {
+        "sd_xl_offset_example-lora_1.0.safetensors": "https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0/resolve/main/sd_xl_offset_example-lora_1.0.safetensors",
+        "BIAO_floating v2.safetensors": "https://civitai.com/api/download/models/136226?type=Model&format=SafeTensor",
+        "soviet architecture.safetensors": "https://civitai.com/api/download/models/142448?type=Model&format=SafeTensor", 
+        "中式建筑图纸.safetensors": "https://civitai.com/api/download/models/18800?type=Model&format=SafeTensor&size=full&fp=fp16",
+        "ponyDiffusionV6XL.safetensors": "https://huggingface.co/mashb1t/fav_models/resolve/main/fav/ponyDiffusionV6XL.safetensors",
+        "SDXL_FILM_PHOTOGRAPHY_STYLE_V1.safetensors": "https://huggingface.co/mashb1t/fav_models/resolve/main/fav/SDXL_FILM_PHOTOGRAPHY_STYLE_V1.safetensors",
+        "Vehicle.safetensors": "https://civitai.com/api/download/models/37767?type=Model&format=SafeTensor",
+        "CyberPunk.safetensors": "https://civitai.com/api/download/models/358120?type=Model&format=SafeTensor",
+        "BuildingConceptSheet.safetensors": "https://civitai.com/api/download/models/410875?type=Model&format=SafeTensor"
+    },
     "previous_default_models": [
         "juggernautXL_version8Rundiffusion.safetensors",
         "juggernautXL_version7Rundiffusion.safetensors",

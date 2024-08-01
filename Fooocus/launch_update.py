@@ -93,6 +93,8 @@ os.environ['GRADIO_TEMP_DIR'] = config.temp_path
 if config.temp_path_cleanup_on_launch:
     print(f'[Cleanup] Attempting to delete content of temp dir {config.temp_path}')
     result = delete_folder_content(config.temp_path, '[Cleanup] ')
+    result += all([delete_folder_content(checkpoint, '[Cleanup]') for checkpoint in config.paths_checkpoints])
+    result += all([delete_folder_content(lora, '[Cleanup]') for lora in config.paths_loras])
     if result:
         print("[Cleanup] Cleanup successful")
     else:
