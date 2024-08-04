@@ -15,7 +15,7 @@ import modules.style_sorter as style_sorter
 import modules.meta_parser
 import args_manager
 import copy
-from launch_update import download_models
+from modules.model_loader_util import download_models
 from extras.inpaint_mask import SAMOptions
 
 from modules.sdxl_styles import legal_style_names
@@ -884,7 +884,8 @@ with shared.gradio_root:
                 vae_downloads = preset_prepared.get('vae_downloads', {})
 
                 preset_prepared['base_model'], preset_prepared['checkpoint_downloads'] = download_models(
-                    default_model, previous_default_models, checkpoint_downloads, embeddings_downloads, lora_downloads, vae_downloads)
+                    default_model, previous_default_models, checkpoint_downloads,
+                    embeddings_downloads, lora_downloads, vae_downloads, args_manager.args)
 
                 if 'prompt' in preset_prepared and preset_prepared.get('prompt') == '':
                     del preset_prepared['prompt']
