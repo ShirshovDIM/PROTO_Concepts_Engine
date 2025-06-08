@@ -1,2 +1,2 @@
-python -s .\AutoFocus\prompt_start.py
+python -s .\AutoProto\prompt_start.py
 pause
