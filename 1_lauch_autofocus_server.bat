@@ -1,2 +1,2 @@
-python -s .\AutoFocus\entry.py
+python -s .\AutoProto\entry.py
 pause

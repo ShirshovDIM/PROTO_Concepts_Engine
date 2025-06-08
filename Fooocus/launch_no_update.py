@@ -99,7 +99,7 @@ if not config.temp_path_cleanup_on_launch:
         print(f"[Cleanup] Failed to delete content of temp dir.")
 
 
-def download_models(default_model, checkpoint_downloads):
+def download_models_no_upload(default_model, checkpoint_downloads):
     for file_name, url in vae_approx_filenames:
         load_file_from_url(url=url, model_dir=config.path_vae_approx, file_name=file_name)
 
@@ -113,7 +113,8 @@ def download_models(default_model, checkpoint_downloads):
     return default_model, checkpoint_downloads
 
 
-config.default_base_model_name, config.checkpoint_downloads = download_models(
+
+config.default_base_model_name, config.checkpoint_downloads = download_models_no_upload(
     config.default_base_model_name, config.checkpoint_downloads)
 
 # config.update_files()

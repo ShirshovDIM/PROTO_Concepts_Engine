@@ -1,3 +1,2 @@
-
-.\python_embeded\python.exe -s Fooocus\entry_update.py  %*
+.\python_embeded\python.exe -s .\Proto\entry_update.py  --preset default %*
 pause
